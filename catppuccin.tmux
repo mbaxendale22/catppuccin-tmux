@@ -89,9 +89,9 @@ build_pane_format() {
 
     if [ "$fill" = "number" ]
     then
-      local show_number="#[fg=$background,bg=$color]$number"
+      local show_number="#[fg=$color,bg=$thm_bg]$number"
       local show_middle_separator="#[fg=$color,bg=$background,nobold,nounderscore,noitalics]$pane_middle_separator"
-      local show_text="#[fg=$thm_fg,bg=$background]$text"
+      local show_text="#[fg=$color,bg=$thm_bg]$text"
 
       if [ "$pane_number_position" = "right" ]
       then
