@@ -222,8 +222,8 @@ build_status_module() {
   then
     local show_left_separator="#[fg=$color,bg=$thm_gray,nobold,nounderscore,noitalics]$status_left_separator"
 
-    local show_icon="#[fg=$thm_bg,bg=$color,nobold,nounderscore,noitalics]$icon "
-    local show_text="#[fg=$thm_bg,bg=$color]$text"
+    local show_icon="#[fg=$color,bg=$thm_bg,nobold,nounderscore,noitalics]$icon "
+    local show_text="#[fg=$color,bg=$thm_bg]$text"
 
     local show_right_separator="#[fg=$color,bg=$thm_gray,nobold,nounderscore,noitalics]$status_right_separator"
 
