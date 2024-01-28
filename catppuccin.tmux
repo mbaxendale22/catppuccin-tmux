@@ -158,9 +158,9 @@ build_window_format() {
 
   if [ "$fill" = "number" ]
   then
-    local show_number="#[fg=$background,bg=$color]$number"
-    local show_middle_separator="#[fg=$color,bg=$background,nobold,nounderscore,noitalics]$window_middle_separator"
-    local show_text="#[fg=$thm_fg,bg=$background]$text"
+    local show_number="#[fg=$color,bg=$thm_bg]$number"
+    local show_middle_separator="#[fg=$color,bg=$thm_bg,nobold,nounderscore,noitalics]$window_middle_separator"
+    local show_text="#[fg=$color,bg=$thm_bg]$text"
 
     if [ "$window_number_position" = "right" ]
     then
